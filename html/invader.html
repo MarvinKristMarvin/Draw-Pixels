@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Invader</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <form class="configuration"></form>
-  <div id="invader"></div>
-  <script src="../js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Invader</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <form class="configuration" name="options" id="options">
+        <input
+          type="text"
+          placeholder="Taille de la grille"
+          class="input-grille"
+        />
+        <input
+          type="text"
+          placeholder="Taille des pixels"
+          class="input-pixels"
+        />
+        <button class="button-validate">Valider</button>
+      </form>
+    </header>
+    <main>
+      <section class="grid"></section>
+    </main>
+    <footer>
+      <section class="color-picker">
+        <div class="plain"></div>
+        <div class="light"></div>
+        <div class="highlight"></div>
+        <div class="empty"></div>
+      </section>
+    </footer>
+
+    <div id="invader"></div>
+    <script src="../js/app.js"></script>
+  </body>
 </html>
